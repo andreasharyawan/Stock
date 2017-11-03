@@ -20,9 +20,7 @@ namespace Stock
 
         private void productsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Products pro = new Products();
-            pro.MdiParent = this;
-            pro.Show();
+            
         }
 
         private void StockMain_FormClosing(object sender, FormClosingEventArgs e)
@@ -38,6 +36,18 @@ namespace Stock
         private void stockToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void showProdukToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Products pro = new Products();
+            pro.MdiParent = this;
+            pro.Show();
+        }
+
+        private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

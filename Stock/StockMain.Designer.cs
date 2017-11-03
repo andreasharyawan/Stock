@@ -38,6 +38,9 @@
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.inputProdukToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.showProdukToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -47,7 +50,8 @@
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.productsToolStripMenuItem,
             this.stockToolStripMenuItem,
-            this.reportsToolStripMenuItem});
+            this.reportsToolStripMenuItem,
+            this.logoutToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.Size = new System.Drawing.Size(1242, 24);
@@ -56,6 +60,9 @@
             // 
             // productsToolStripMenuItem
             // 
+            this.productsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.inputProdukToolStripMenuItem,
+            this.showProdukToolStripMenuItem});
             this.productsToolStripMenuItem.Name = "productsToolStripMenuItem";
             this.productsToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
             this.productsToolStripMenuItem.Text = "Produk";
@@ -106,6 +113,26 @@
             this.toolStripStatusLabel.Size = new System.Drawing.Size(39, 17);
             this.toolStripStatusLabel.Text = "Status";
             // 
+            // inputProdukToolStripMenuItem
+            // 
+            this.inputProdukToolStripMenuItem.Name = "inputProdukToolStripMenuItem";
+            this.inputProdukToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.inputProdukToolStripMenuItem.Text = "Input Produk";
+            // 
+            // showProdukToolStripMenuItem
+            // 
+            this.showProdukToolStripMenuItem.Name = "showProdukToolStripMenuItem";
+            this.showProdukToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.showProdukToolStripMenuItem.Text = "Show Produk";
+            this.showProdukToolStripMenuItem.Click += new System.EventHandler(this.showProdukToolStripMenuItem_Click);
+            // 
+            // logoutToolStripMenuItem
+            // 
+            this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
+            this.logoutToolStripMenuItem.Text = "Logout";
+            this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
+            // 
             // StockMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -139,6 +166,9 @@
         private System.Windows.Forms.ToolStripMenuItem reportsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem productReportToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem stockListToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem inputProdukToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem showProdukToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem;
     }
 }
 
